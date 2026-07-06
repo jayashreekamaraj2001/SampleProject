@@ -14,6 +14,15 @@ public class User {
 		System.out.println("Java");
 	}
 	
+	  public void list() {
+		  System.out.println("List");
+	  }
+	  public void jS() {
+		  System.out.println("JavaScript");
+	  }
+
+	
+
        public static void main(String[] args) {
     	   WebDriver a = new ChromeDriver();
     	   a.get("https://www.omrbranch.com/");
