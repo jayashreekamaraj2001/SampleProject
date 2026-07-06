@@ -6,6 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class User {
+	
+	public void sel() {
+		System.out.println("Selenium");
+	}
+	public void java() {
+		System.out.println("Java");
+	}
+	
        public static void main(String[] args) {
     	   WebDriver a = new ChromeDriver();
     	   a.get("https://www.omrbranch.com/");
