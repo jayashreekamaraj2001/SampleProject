@@ -16,10 +16,12 @@ public class Day1 {
 		System.out.println("css");
 
 	}
-	
-	public void javaScript() {
+	public void JS() {
 		System.out.println("JavaScript");
+
 	}
+	
+	
 	
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
