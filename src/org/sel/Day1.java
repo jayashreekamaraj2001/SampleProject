@@ -1,7 +1,10 @@
 package org.sel;
 
 import org.jspecify.annotations.Nullable;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day1 {
@@ -14,10 +17,23 @@ public class Day1 {
 
 	}
 	
+	public void javaScript() {
+		System.out.println("JavaScript");
+	}
+	
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.omrbranch.com/");
+		
+		
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		WebElement element = driver.findElement(By.id("email"));
+		element.sendKeys("jayashreekamaraj2001@gmail.com");
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+	//	js.executeScript("arguments[0].scrollIntoView(false);", element);
+		
 		@Nullable
 		String currentUrl = driver.getCurrentUrl();
 		System.out.println(currentUrl);
