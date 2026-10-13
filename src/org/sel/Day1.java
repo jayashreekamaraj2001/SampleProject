@@ -21,9 +21,16 @@ public class Day1 {
 
 	}
 	
+	public void html() {
+		System.out.println("HTML");
+	}
+	
+	
+	
 	
 	
 	public static void main(String[] args) {
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.omrbranch.com/");
@@ -43,6 +50,11 @@ public class Day1 {
 	       @Nullable
 		String title = driver.getTitle();
 	       System.out.println(title);
+	       
+	       Day1 a = new Day1();
+	       a.html();
+	       a.JS();
+	       
 		
 	}
 
